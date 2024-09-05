@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+    extend: {
+      screens: {
+        'tablet': '768px',
+        'desktop': '1440px',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '16px',
+          'tablet': '32px',
+          'desktop': '32px',
+        },
+        maxWidth: {
+          'tablet': '100%',
+          'desktop': '1280px',
+        },
+        gap: {
+          'tablet': '32px',
+          'desktop': '32px',
+        },
+      },
+      breakpointWidth: {
+        'desktop': '1440px',
+        'tablet': '768px',
+        'mobile': '375px',
+      },
+      containerMaxWidth: {
+        'desktop': '1280px',
+        'tablet': '100%',
+        'mobile': '100%',
+      },
+      sidePadding: {
+        'desktop': '32px',
+        'tablet': '32px',
+        'mobile': '16px',
+      },
+      columns: {
+        'desktop': '12',
+        'tablet': '6',
+        'mobile': '4',
+      },
+      columnGap: {
+        'desktop': '32px',
+        'tablet': '32px',
+        'mobile': '16px',
+      },
+    },
+  },
+};
+    </script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <!-- background color  -->
+  <body class="bg-gradient-to-br from-gray-100 to-gray-500">
+    <!-- CONTAINER WITH RESPONSIVE DESIGN -->
+    <div class="flex mx-auto container padding-left-8 padding-right-8 md:max-w-full md:padding-left-16 md:padding-right-16 xl:max-w-[1280px] xl:padding-left-16 xl:padding-right-16 justify-center">
+      <!-- GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
+        <!-- CARD -->
+        <div class="rounded-lg mt-[200px] max-w-[375px] grow p-6 rounded-lg gap-4 flex flex-col bg-white">
+          <!-- CARD CONTENT -->
+          <div class="flex justify-center items-center gap-4 self-stretch">
+            <!-- IMAGE -->
+            <div class="h-12 w-12">
+              <img class="w-12 h-12 object-cover" alt="Photo of Sarah" src="./img/profile-thumbnail.png"/>
+            </div>
+            <!-- PERSONAL INFO -->
+            <div class="flex flex-col gap-px">
+              <span class="text-lg text-neutral-900 font-semibold">Sarah Dole</span>
+              <span class="text-sm text-neutral-600 font-normal">@sarahdole</span>
+            </div>           
+          </div>
+          <!-- MESSAGE -->
+          <span class="font-normal text-base text-neutral-600">I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!</span>
+        </div>
+      </div>
+    </div>
+    
+    
+         <!-- Attribute this challenge to yourself! -->
+         <div class="credits" data-gfe-screenshot-exclude="true">
+          A challenge by
+          <a
+            href="https://www.greatfrontend.com/projects?ref=challenges"
+            target="_blank"
+            >GreatFrontEnd Projects</a
+          >. Built by
+          <a
+            href="https://www.greatfrontend.com/projects/u/username"
+            target="_blank"
+            >Matthew McCane</a
+          >.
+        </div>
+  
+      
+
+
+  
+    <script src="js/index.js"></script>
+  </body>
+</html>
